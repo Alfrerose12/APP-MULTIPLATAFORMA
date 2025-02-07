@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'agendar-cita',
+    loadChildren: () => import('./agendar-cita/agendar-cita.module').then( m => m.AgendarCitaPageModule)
+  },
+  {
+    path: 'historial-cita',
+    loadChildren: () => import('./historial-cita/historial-cita.module').then( m => m.HistorialCitaPageModule)
+  },
 ];
 @NgModule({
   imports: [
