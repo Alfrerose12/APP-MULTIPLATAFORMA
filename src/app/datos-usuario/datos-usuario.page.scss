@@ -60,3 +60,34 @@
 #espacio {
     padding-top: 10px;
 }
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Reduce la altura */
+  }
+  
+  
+  .centered-image img {
+    max-width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+  .titulo {
+    color: rgb(0, 0, 0);
+    margin-top: -300px; /* Espacio entre el botón y el título */
+  font-size: 20px;
+  font-weight: bold;
+  }
+  .user-input {
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo del input */
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 40px; /* Separa el input de "Usuario" */
+    display: block; /* Asegura que respete el margen automático */
+    margin-left: auto;
+    margin-right: auto;
+  }
