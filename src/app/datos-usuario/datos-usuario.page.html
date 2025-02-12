@@ -1,9 +1,8 @@
 <ion-header [translucent]="true">
-
   <ion-toolbar>
     <ion-buttons slot="start">
-      <img src="assets/logo_od.png" alt="Logo de la empresa">
-      <ion-title class="titulo">Datos de Usuario</ion-title>
+      <img src="assets/logo_od.png" alt="Logo de la empresa" class="logo">
+      <ion-title class="titulo">Datos del Usuario</ion-title>
     </ion-buttons>
     
     <ion-buttons slot="end">
@@ -11,9 +10,26 @@
       <ion-icon name="log-out-outline" size="large" routerLink="/login"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
-  
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="content">
+  <div class="card">
+    <div class="user-profile">
+      <img src="https://cdn-icons-png.flaticon.com/512/3736/3736502.png" alt="Imagen de perfil" class="profile-image">
+      <ion-button expand="full" class="change-photo-button">Cambiar Foto de perfil</ion-button>
+    </div>
 
+    <div class="user-details">
+      <ion-title class="title">Usuario</ion-title>
+      <ion-input class="user-input" placeholder="Nombre de usuario"></ion-input>
+      
+      <ion-title id="espacio" class="title">Correo Electrónico</ion-title>
+      <ion-input class="user-input" placeholder="Correo electrónico"></ion-input>
+      
+      <ion-title id="espacio" class="title">Teléfono</ion-title>
+      <ion-input class="user-input" placeholder="Número de teléfono"></ion-input>
+      
+      <ion-button expand="full" class="save-button">Guardar cambios</ion-button>
+    </div>
+  </div>
 </ion-content>
